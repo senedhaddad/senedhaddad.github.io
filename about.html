@@ -211,8 +211,44 @@ div{
 						<li>I speak 3 languages: English, Arabic, and Spanish.</li>
 						<li>I am a first-generation college student.</li>
 						<li>I am double-jointed and can rotate my hand 360º.</li>
-						<li>I have an older sister and younger brother. Big deal, right? How about 11 aunts, 9 uncles, and over 50 first cousins.</li>
 						<li>Favorite Quote: "Hard work beats talent when talent doesn't work hard." -Tim Notke</li>
+						<li>I have an older sister and younger brother. How many aunts, uncles, and cousins do you think I have?</li>
+						
+						<form id="form1">
+						
+						<fieldset>
+						<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />2 uncles, 5 aunts, 10 cousins.</label>
+						<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />4 uncles, 7 aunts, 20 cousins.</label>
+						<label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />6 uncles, 9 aunts, 35 cousins.</label>
+						<label for="var_condition"><input type="radio" name="variable" value="100%" id="var_condition"/>8 uncles, 11 aunts, 50+ cousins.</label>
+
+						
+						<button type="submit" value="Submit">Submit</button>
+						</fieldset>
+						</form>
+						
+						<p>You received a <span id="grade">__</span>.</p>
+						<p id="grade2"></p>
+
+						<script>
+						document.getElementById("form1").onsubmit=function() {
+						       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+							   
+							   
+							   result = variable;
+							   
+							document.getElementById("grade").innerHTML = result;
+
+							if (result == 0) {result2 = "Try again!"};
+							if (result == 100) {result2 = "You got it!"};
+							document.getElementById("grade2").innerHTML = result2; 
+							   
+
+
+							return false;
+							}
+
+						</script>
 					</ul>
 	   			</div>
 	    		<div class="col-sm-3"></div>

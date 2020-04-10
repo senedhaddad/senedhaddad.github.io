@@ -1125,6 +1125,13 @@ body.offcanvas {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
+    @media screen and (max-width: 992px) {
+      body {
+        font-size: 16px;
+      }
+    }
+body {
+    font-size: 16px;}
   .colorlib-counters .overlay {
     z-index: 0;
     position: absolute;

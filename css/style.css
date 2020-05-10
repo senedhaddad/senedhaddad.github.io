@@ -1124,11 +1124,10 @@ body.offcanvas {
   padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: center center;
+  width:100%; }
     @media screen and (max-width: 992px) {
       body {
-        background-size:100%;
-        width:100%;
         font-size: 16px;
       }
     }

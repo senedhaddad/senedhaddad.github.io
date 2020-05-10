@@ -1130,7 +1130,7 @@ body.offcanvas {
       .colorlib-counters {
         background-size: cover;
         background-attachment: fixed;
-        width:400%;
+        background-position: center center;
       }
       body {
         font-size: 16px;

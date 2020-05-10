@@ -1128,10 +1128,8 @@ body.offcanvas {
  }
     @media screen and (max-width: 992px) {
       .colorlib-counters {
-        background-size: contain;
+        width: 400%;
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center center;
       }
       body {
         font-size: 16px;

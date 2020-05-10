@@ -1127,9 +1127,10 @@ body.offcanvas {
   background-position: center center; }
     @media screen and (max-width: 992px) {
       body {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 25% 25%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         font-size: 16px;
       }
     }
